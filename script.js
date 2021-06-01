@@ -8,3 +8,17 @@ document.getElementById('mybutton').addEventListener('click', myFunction)
 function myFunction () {
   alert('Hello, world!')
 }
+// The code below will change the fontm color, and size of "Hello, Matthew Espayos!"
+document.getElementById('press').addEventListener('click', changemessage)
+function changemessage () {
+  document.getElementById('p1').style.color = '#9D8189'
+  document.getElementById('p1').style.fontSize = '200%'
+  document.getElementById('p1').style.fontFamily = 'Helvetica'
+}
+// The code below will revert all changes made
+document.getElementById('revert').addEventListener('click', revertmessage)
+function revertmessage () {
+  alert('The page will go back to normal')
+  document.getElementById('p1').style.color = '#2f2f2f'
+  document.getElementById('p1').style.fontSize = 'larger'
+}
